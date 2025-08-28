@@ -4,9 +4,9 @@ import os
 # Load from Railway environment variables
 API_ID = int(os.getenv("API_ID"))
 API_HASH = os.getenv("API_HASH")
-BOT_TOKEN = os.getenv("BOT_TOKEN")  # if you need it later
-SOURCE_BOT = int(os.getenv("SOURCE_BOT"))  # 👈 add in Railway Variables
-TARGET_GROUP = int(os.getenv("TARGET_GROUP"))  # 👈 add in Railway Variables
+BOT_TOKEN = os.getenv("BOT_TOKEN")  # optional, if needed later
+SOURCE_BOT = os.getenv("SOURCE_BOT")  # 👈 keep as string (username or ID)
+TARGET_GROUP = int(os.getenv("TARGET_GROUP"))  # 👈 must be numeric (-100xxxx)
 
 # Create Telegram client session
 client = TelegramClient("forwarder", API_ID, API_HASH)
