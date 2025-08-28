@@ -1,3 +1,4 @@
-config.ini
-forwarder.session
 __pycache__/
+*.session
+*.pyc
+.env
